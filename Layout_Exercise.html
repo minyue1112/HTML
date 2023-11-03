@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Layout Example</title> 
+    <style>
+        #header {
+            background-color:lightpink;
+            text-align: center;
+            padding: 20px;
+        }
+        #header h1{
+            margin-top: 0px;
+            margin-bottom: 0px;
+            color: purple;
+        }
+        .topnav {
+            display: flex; /*da heng */
+            justify-content:space-around;
+            background-color: darkorchid;  
+        }
+
+        .topnav a {
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-style: italic;
+        }
+
+        .topnav a:hover {
+            background-color: #F174DC;
+            color: black;
+        }
+        .row {
+            display: flex;
+            justify-content:space-evenly;
+        }
+        #column {
+            width: 33.33%;
+        }
+
+        .column1 {
+            width: 25%;
+        }
+        .column h2{
+            font-style: italic;
+            color:black;
+            text-align: center;
+        }
+        .column p{
+            color:grey;
+            text-align: center;
+        }
+        .hamster{
+            text-align: center;
+        }
+        .pet{
+            text-align: center;
+        }
+        .row3 {
+            display: flex;
+            justify-content:space-evenly;
+            text-align: center;
+        }
+        .row4 {
+            display: flex;
+            justify-content:space-evenly;
+        }
+
+
+    </style>
+</head>
+    <body>
+        <div id="container">
+            
+            <div id="header">
+                <img src = "dog.jpg" alt = "Dog" width = "70" height = "70">
+                <h1>PET SHOP</h1>
+                </div>
+
+                <div class="topnav">
+                    <a href="#">DOG</a>
+                    <a href="#">CAT</a>
+                    <a href="#">HAMSTER</a>
+                  </div>
+
+                  <div class="row">
+
+                    <div class="column" id=”column1”>
+                      <h2>DOG INTRODUCTION</h2>
+                  <p>After you introduce your new dog to your resident pet, you can introduce your new dog to your home.Instead of bringing both dogs inside right away, you should have a helper take your resident dog for a stroll. Then give your new dog a chance to check out his new living space alone.Keep an eye on your new dog as he investigates. When he’s checked everything out, bring him to an open area of your home, away from the front door. Cramped spaces can lead to jockeying for position and accidental scuffles.Once again, pick up any dog toys, treats, beds, prized possessions, or food that could create tension between the dogs. Then you can have your helper bring your resident dog inside. </p>
+                    </div>
+
+                   <div class="column" >
+                      <h2>CAT INTRODUCTION</h2>
+                  <p>After you introduce your new dog to your resident pet, you can introduce your new dog to your home.Instead of bringing both dogs inside right away, you should have a helper take your resident dog for a stroll. Then give your new dog a chance to check out his new living space alone.Keep an eye on your new dog as he investigates. When he’s checked everything out, bring him to an open area of your home, away from the front door. Cramped spaces can lead to jockeying for position and accidental scuffles.Once again, pick up any dog toys, treats, beds, prized possessions, or food that could create tension between the dogs. Then you can have your helper bring your resident dog inside. </p>
+                    </div>
+                  </div>
+
+                  <div class="row"></div>
+
+                  <div class="column" id="hamster">
+                    <h2>HAMSTER INTRODUCTION</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. </p>
+                  </div>
+            </div>
+            
+                  <div class="row3">
+
+                    <div class="column" >
+                      <h2>DOG INTRODUCTION</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. </p>
+                    </div>
+
+                   <div class="column" id=”column1”>
+                      <h2>CAT INTRODUCTION</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. </p>
+                    </div>
+
+                   <div class="column">
+                      <h2>HAMSTER INTRODUCTION</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. </p>
+                    </div>
+                  </div>
+
+                  <div class="row4">
+
+                    <div class="column" >
+                      <h2>DOG</h2>
+                      <img src = "dog2.jpg" alt = "cat" width = "150" height = "150">
+                    </div>
+
+                   <div class="column" id=”column1”>
+                      <h2>CAT</h2>
+                      <img src = "cat.jpg" alt = "dog" width = "200" height = "200">
+                    </div>
+
+                   <div class="column">
+                      <h2>HAMSTER</h2>
+                      <img src = "hamster.jpg" alt = "hamster" width = "150" height = "150">
+                    </div>
+                  </div>
+                    
+        </div>
+    </body>
+</html>
