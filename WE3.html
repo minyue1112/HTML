@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: italic;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/*/
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/*  top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color:black;
+}
+
+/* the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration:none;
+}
+
+/* color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/*  two columns  */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Image */
+.img {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add  CE effect */
+.CE {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/*  layout 1*/
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/*  layout 2*/
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>MY WEBSITE</h1>
+  <p>WELCOME TO MY WEBSITE</p>
+</div>
+
+<div class="topnav">
+  <a href="#">ABOUT US</a>
+  <a href="#">ADMISSION</a>
+  <a href="#">NEW ERA CARD</a>
+  <a href="#" style="float:right">CAREER</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="CE">
+      <h2>ABOUT US </h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <img src="new era.png" alt=" new era "height="200px">
+      <p>New Era University College: An Introduction
+        New Era University College (NEUC) was established in 1997 following the closure of Nanyang University in Singapore in 1980. It was the outcome of many years of efforts in addition to unwavering support from the Malaysian Chinese community.
+        NEUC is a non-profit, private university college in Malaysia. On 30 December 2016, New Era was upgraded to University College status by the Ministry of Higher Education. This upgrading allows NEUC to offer its own undergraduate and postgraduate programmes. All courses offered by NEUC are approved by the Malaysian Qualifications Agency (MQA). The qualifications awarded by NEUC are also accredited by the Chinese Service Centre for Scholarly Exchange (CSCSE) under the mutual recognition of qualifications agreement between Malaysia and China. NEUC is also listed on China’s JSJ Study Abroad website. NEUC started its first dedicated class for international students from China in July 2020 and has welcomed more than 400 international students since then. Chinese postgraduate and undergraduate students make up the majority of international students, while other international students from countries such as Indonesia, India, Japan, South Korea, Myanmar, Laos, The United States of America, and Canada are also enrolled.</p>
+    </div>
+    
+    <div class="CE">
+      <h2>INTRODUCTION </h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <img src="new era.png" alt=" new era "height="200px">
+      <p>On 30 December 2016 New Era was upgraded to University College status by the Ministry of Higher Education. This upgrading allows New Era University College to confer its own degrees and post-graduate degrees. Three faculties were thereupon formed out of existing departments and entrusted to develop and introduce new degree courses. At the same time diploma courses continued to be offered. These diploma courses while preparing graduates for a working career also serve as a pathway to degree courses in New Era and in partner overseas universities.</p>
+    </div>
+  
+</div>
+  <div class="rightcolumn">
+    <div class="CE">
+      <h2>ADDRESS</h2>
+      <img src="era.jpg" alt=" era "height="200px">
+      <p> Blok B&C, Lot 5, Seksyen 10, Jalan Bukit, 43000 Kajang, Selangor.</p>
+    </div>
+    <div class="CE">
+      <h3>POPULAR POST</h3>
+      <img src="new.png" alt=" new "height="200px">
+      <img src="institude.png" alt=" institude "height="200px">
+      <img src="computer.jpg" alt=" computer"height="200px">
+    </div>
+    <div class="CE">
+      <h3>Follow Me</h3>
+      <P>EMAIL: neuc@newera.edu.my</P>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+    <h2>FOLLOW NEW ERA NOW ! </h2>
+  </div>
+
+</body>
+</html>

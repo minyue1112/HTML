@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SURVEY FORM</title>
+    <style>
+        body {
+            background: skyblue;
+            font-family: cursive;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+            text-shadow: purple 1px 0 10px;
+        }
+        form {
+            max-width: 500px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin-top: 100px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        input[type="radio"] {
+            margin-right: 500px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            border: none;
+            border-radius: 50px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Survey Form</h1>
+
+    <form>
+        First name:<br>
+        <input type="text" name="firstname" required><br>
+
+        Last name:<br>
+        <input type="text" name="lastname" required><br>
+
+        Gender:<br>
+        <select id="gender" name="gender" required>
+            <option value="select">--- Please Select ---</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br>
+
+        Birthday Date:<br>
+        <input type="date" name="birthday" required><br>
+
+        Education Level:<br>
+        <input type="text" name="education" required><br>
+
+        Hobby:<br>
+        <input type="text" name="hobby" required><br>
+
+        Feedback About New Era:<br>
+        <input type="text" name="feedback" required><br>
+
+        <input type="submit">
+    </form>
+          
+      
+</body>
+</html>
